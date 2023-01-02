@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node src/index.ts",
+        "test": "mocha -r ts-node/register src/**/*.test.ts",
+        "lint": "eslint ./src/**/*.ts"
+    },
+    "devDependencies": {
+        "eslint-config-salt-typescript": "^1.0.0"
+    },
+    "dependencies": {
+        "mocha": "^10.2.0"
+    }
+}
